@@ -1,4 +1,4 @@
-# olaf.js  
+# store (ng powered web app)
 > PowerDMS JavaScript Homework  
 
 [Functional Specification](http://homework.powerdms.com/)  
