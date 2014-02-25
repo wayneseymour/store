@@ -2,12 +2,15 @@
 <input class="search" type="text" placeholder="search" width="200px" ng-model="query" /> {{searchMsg}}
 <div>
 	<!--Body content-->
-	<ul>
-		<li ng-repeat="book in books | filter:query">
-			<img style="width: 100px; height: 100px;" class="hoverimg" ng-src="http://homework.powerdms.com/{{book.imageUri}}" />
-			<p>{{book.title}}</p> <span>${{book.price}}</span>
-			<p>{{book.author}}</p>
-			<p>{{book.type}}</p>
-		</li>
-	</ul>
+	<div ng-repeat="book in books | filter:query" style="margin: 10px; width: 400px;">
+		<div><img style="width: 200px; height: 150px;" class="hoverimg" ng-src="http://homework.powerdms.com/{{book.imageUri}}" /></div>
+		<div style="width: 66%; margin: 10px 3px 30px 5px;">
+			<p style="font-weight: bold;">{{book.title}}<span>${{book.price}}</span></p>
+			
+			
+			<span>{{book.author}}</span>
+			<span style="color: grey;">{{(book.type === 'book') ? 'Hardcover' : 'paperback'}}</span>
+			<div>{{book.description.substring(0, 160)}}</div>
+		</div>
+	</div>
 </div>
