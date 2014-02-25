@@ -14,7 +14,7 @@ angular.module('storeApp', [
         templateUrl: 'views/store.html',
         controller: 'StoreCtrl'
       })
-      .otherwise({
-        redirectTo: '/'
-      });
+      // .otherwise({
+      //   redirectTo: '/'
+      // });
   });
