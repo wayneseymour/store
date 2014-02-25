@@ -2,15 +2,15 @@
 <input class="search" type="text" placeholder="search" width="200px" ng-model="query" /> {{searchMsg}}
 <div>
 	<!--Body content-->
-	<div ng-repeat="book in books | filter:query" style="margin: 10px; width: 400px;">
-		<div><img style="width: 200px; height: 150px;" class="hoverimg" ng-src="http://homework.powerdms.com/{{book.imageUri}}" /></div>
-		<div style="width: 66%; margin: 10px 3px 30px 5px;">
-			<p style="font-weight: bold;">{{book.title}}<span>${{book.price}}</span></p>
+	<div ng-repeat="book in books | filter:query" style="margin: 10px; width: 500px; height: 400px;">
+		<span style="width: 50%;"><img style="width: 200px; height: 150px;" class="hoverimg" ng-src="http://homework.powerdms.com/{{book.imageUri}}" /></span>
+		<span style="width: 50%; margin: 10px 3px 30px 5px; float: right; width: 200px; height: 150px;">
+			<span style="font-weight: bold; width: 100%"><span>{{book.title}}</span><span style="float: right;">${{book.price}}</span></span>
 			
 			
-			<span>{{book.author}}</span>
-			<span style="color: grey;">{{(book.type === 'book') ? 'Hardcover' : 'paperback'}}</span>
-			<div>{{book.description.substring(0, 160)}}</div>
-		</div>
+			<p>{{book.author}}</p>
+			<span style="color: grey;">{{(book.type === 'book') ? 'Hardcover' : 'Other'}}</span>
+			<div>{{book.description.substring(0, 120)}}</div>
+		</span>
 	</div>
 </div>
