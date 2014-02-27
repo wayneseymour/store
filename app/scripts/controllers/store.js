@@ -11,5 +11,9 @@ angular.module('storeApp')
 		$http.get('/api/products/').success(function(data) {
 			$scope.books = data;
 		});
+    $scope.mouseOverThing = function(thing) {
+        $scope.msg = "Mouse Over: " + thing;
+      console.log('\n### msg: ', $scope.msg);
+    }
 		$scope.searchMsg = 'Use the search to box to search for products. You can also search on the type of products, like "book" or "movie"';
 	});

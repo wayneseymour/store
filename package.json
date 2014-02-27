@@ -3,7 +3,8 @@
   "version": "0.0.3",
   "dependencies": {
     "superagent": "^0.16.0",
-    "es6-promise": "^0.1.1"
+    "es6-promise": "^0.1.1",
+    "express": "~3.4.8"
   },
   "author": "Wayne Kenneth Seymour III",
   "license": "MIT",

@@ -18,4 +18,4 @@ grunt
 npm start
 ``` 
 
-### Now browse to http://127.0.0.1:9090 and click on the `store` button on the top right.
+### Now browse to http://127.0.0.1:3030 and click on the `store` button on the top right.

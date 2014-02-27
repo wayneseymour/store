@@ -1,3 +1,4 @@
+'use strict';
 // server.js
 
 // set up ========================
@@ -5,7 +6,7 @@ var express = require('express');
 var app = express();
 var get = require('./funcs').get;
 
-var port = 9090;
+var port = 3030;
 // listen (start app with node server.js) ======================================
 app.listen(port);
 console.log("App listening on port: ", port);
@@ -42,6 +43,6 @@ app.get('/api/products', function(req, res) {
 });
 
 // application -------------------------------------------------------------
-app.get('/store', function(req, res) {
-	res.sendfile('./app/index.html'); // load the single view file (angular will handle the page changes on the front-end)
-});
+// app.get('/store', function(req, res) {
+// 	res.sendfile('./app/index.html'); // load the single view file (angular will handle the page changes on the front-end)
+// });

@@ -5,8 +5,9 @@
   },
 
   "preview": {
-        "Project Index (static)": "https://{{domain}}/{{index}}",
-        "Current File (static)": "https://{{domain}}/{{filepath}}",
-        "Box URL": "http://{{domain}}:3030/"
+    "Project Index (static)": "https://{{domain}}:3030",
+    "Current File (static)": "http://{{domain}}:3030",
+    "Box URL": "http://{{domain}}:3030",
+    "Research": "http://{{domain}}"
   }
 }
