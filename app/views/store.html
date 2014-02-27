@@ -2,15 +2,15 @@
 <input class="search" type="text" placeholder="search" width="200px" ng-model="query" /> {{searchMsg}}
 <div>
 	<!--Body content-->
-	<div ng-repeat="book in books | filter:query" style="margin: 10px; width: 500px; height: 400px;">
+	<div ng-repeat="book in books | filter:query" style="margin: 10px; width: 450px;">
 		<img style="width: 200px; height: 150px; float: left" class="hoverimg" ng-src="http://homework.powerdms.com/{{book.imageUri}}" />
 		
-		<div style="font-weight: bold; width: 100% float: right;"><span>{{book.title}}</span><span style="float: right;">${{book.price}}</span>
+		<div style="margin-left: 230px; font-weight: bold; width: 100% float: right;"><span>{{book.title}}</span><span style="float: right;">${{book.price}}</span>
 			
 			
 			<p>{{book.author}}</p>
 			<span style="color: grey;">{{(book.type === 'book') ? 'Hardcover' : 'Other'}}</span>
-			<div>{{book.description.substring(0, 160)}}</div>
+			<div>{{book.description.substring(0, 110)}}</div>
 		</div>
 	</div>
 </div>

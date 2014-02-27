@@ -15,7 +15,7 @@ cd store
 npm install
 bower install
 grunt
-grunt serve
+npm start
 ``` 
 
-### Now browse to http://127.0.0.1:9000 and click on the `store` button on the top right.
+### Now browse to http://127.0.0.1:9090 and click on the `store` button on the top right.

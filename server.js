@@ -24,7 +24,7 @@ app.configure(function() {
 
 app.get('/api/products', function(req, res) {
 	// console.log('\n### get /api/products/ req: ', req);
-	debugger;
+
 	get({
 		urlName: 'getProducts',
 		urlValue: 'http://homework.powerdms.com/products/'
