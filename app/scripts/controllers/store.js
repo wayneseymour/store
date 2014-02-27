@@ -7,7 +7,8 @@ angular.module('storeApp')
 			'AngularJS',
 			'Karma'
 		];
-		$http.get('products/products.json').success(function(data) {
+		// $http.get('products/products.json').success(function(data) {
+		$http.get('/api/products/').success(function(data) {
 			$scope.books = data;
 		});
 		$scope.searchMsg = 'Use the search to box to search for products. You can also search on the type of products, like "book" or "movie"';

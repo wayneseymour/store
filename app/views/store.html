@@ -3,14 +3,14 @@
 <div>
 	<!--Body content-->
 	<div ng-repeat="book in books | filter:query" style="margin: 10px; width: 500px; height: 400px;">
-		<span style="width: 50%;"><img style="width: 200px; height: 150px;" class="hoverimg" ng-src="http://homework.powerdms.com/{{book.imageUri}}" /></span>
-		<span style="width: 50%; margin: 10px 3px 30px 5px; float: right; width: 200px; height: 150px;">
-			<span style="font-weight: bold; width: 100%"><span>{{book.title}}</span><span style="float: right;">${{book.price}}</span></span>
+		<img style="width: 200px; height: 150px; float: left" class="hoverimg" ng-src="http://homework.powerdms.com/{{book.imageUri}}" />
+		
+		<div style="font-weight: bold; width: 100% float: right;"><span>{{book.title}}</span><span style="float: right;">${{book.price}}</span>
 			
 			
 			<p>{{book.author}}</p>
 			<span style="color: grey;">{{(book.type === 'book') ? 'Hardcover' : 'Other'}}</span>
-			<div>{{book.description.substring(0, 120)}}</div>
-		</span>
+			<div>{{book.description.substring(0, 160)}}</div>
+		</div>
 	</div>
 </div>

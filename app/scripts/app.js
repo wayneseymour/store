@@ -13,7 +13,7 @@ angular.module('storeApp', [
       .when('/store', {
         templateUrl: 'views/store.html',
         controller: 'StoreCtrl'
-      })
+      });
       // .otherwise({
       //   redirectTo: '/'
       // });

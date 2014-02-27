@@ -33,7 +33,6 @@ function get(conf) {
 
 		request
 			.get(conf.urlValue)
-			.set(conf.headers)
 			.on('error', function runOnErr(err) {
 				onErr(err);
 			})
