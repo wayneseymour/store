@@ -1,10 +1,10 @@
 <h3>Store</h3>
-<input class="search" type="text" placeholder="search" width="200px" ng-model="query" /> {{searchMsg}}
+<input class="" type="text" placeholder="search"  ng-model="query" /> {{searchMsg}}
 <div>
 	<!--Body content-->
 	<div ng-repeat="book in books | filter:query" style="margin: 10px; width: 450px;">
-		<img style="width: 200px; height: 150px; float: left" class="hoverimg" ng-src="http://homework.powerdms.com/{{book.imageUri}}" ng-mouseover="mouseOverThing(thing)"/>
-		{{thing.item}}
+		<img style="width: 200px; height: 150px; float: left" class="hoverimg" ng-src="http://homework.powerdms.com/{{book.imageUri}}" />
+		
 		<div style="margin-left: 230px;  width: 98% float: right;"><span style="font-weight: bold;">{{book.title}}</span><span style="float: right;">${{book.price}}</span>
 			
 			
