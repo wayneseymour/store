@@ -14,7 +14,7 @@ module.exports = {
         callback();
     },
 
-    testGetProducts: function(test) {
+    testGetRemoteProducts: function(test) {
         debugger;
         get({
             urlName: 'getProducts',
@@ -31,7 +31,7 @@ module.exports = {
         });
     },
 
-    testGetStatic: function(test) {
+    testGetStaticProducts: function(test) {
         debugger;
 
         var expected = 'Viktor E. Frankl';
