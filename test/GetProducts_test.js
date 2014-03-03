@@ -6,21 +6,24 @@ var getStatic = require('../lib/funcs').getStatic;
 
 module.exports = {
 
-    setUp: function(callback) {
+    setUp: function (callback) {
         callback();
     },
 
-    tearDown: function(callback) {
+    tearDown: function (callback) {
         callback();
     },
 
-    testGetRemoteProducts: function(test) {
+    testGetRemoteProducts: function (test) {
         debugger;
         get({
             urlName: 'getProducts',
             urlValue: 'http://homework.powerdms.com/products/'
         }).
-        then(function(response) {
+        catch (function handleCatch(response) {
+            console.log("\n#### Caught response: ", response);
+        }).
+        then(function (response) {
             var statusCode = response.res.statusCode;
             console.log('\n### response.res.statusCode: ',
                 statusCode);
@@ -31,7 +34,7 @@ module.exports = {
         });
     },
 
-    testGetStaticProducts: function(test) {
+    testGetStaticProducts: function (test) {
         debugger;
 
         var expected = 'Viktor E. Frankl';
